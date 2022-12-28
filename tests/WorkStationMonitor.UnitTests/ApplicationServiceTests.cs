@@ -10,8 +10,8 @@ namespace WorkStationMonitor.UnitTests;
 
 public class ApplicationServiceTests
 {
-    private Mock<IProcessModuleProvider> _processModuleProviderMock;
-    private ApplicationService _applicationService;
+    private Mock<IProcessModuleProvider> _processModuleProviderMock = null!;
+    private ApplicationService _applicationService = null!;
 
     [Fact]
     public void GetActiveApplication_WhenActiveProcessModuleIsNull_ShouldReturnNull()
