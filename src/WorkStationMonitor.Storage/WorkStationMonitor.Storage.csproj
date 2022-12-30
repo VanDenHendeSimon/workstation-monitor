@@ -1,16 +1,17 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <OutputType>Exe</OutputType>
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="InfluxDB.Client" Version="4.9.*" />
+    </ItemGroup>
+
+    <ItemGroup>
       <ProjectReference Include="..\WorkStationMonitor.Core\WorkStationMonitor.Core.csproj" />
-      <ProjectReference Include="..\WorkStationMonitor.Storage\WorkStationMonitor.Storage.csproj" />
     </ItemGroup>
 
 </Project>
