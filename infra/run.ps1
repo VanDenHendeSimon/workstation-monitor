@@ -1,7 +1,7 @@
 # Start up docker-compose
 docker compose up -d
 
-# Copy over all environment variables from the .env file to the dotnet project
+# Copy over all environment variables from the .env file to be used in the dotnet project
 $EnvFileContent = Get-Content -Path .\.env | Out-String
 $Regex = '(?<name>\w+)=(?<value>\w+)'
 
