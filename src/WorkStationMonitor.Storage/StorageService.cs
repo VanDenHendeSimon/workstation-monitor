@@ -7,7 +7,7 @@ namespace WorkStationMonitor.Storage;
 
 public class StorageService : IDisposable
 {
-    private readonly InfluxDBClient _client;
+    private readonly IInfluxDBClient _client;
 
     public StorageService()
     {

@@ -1,0 +1,10 @@
+﻿{
+  "Precision": "ms",
+  "measurementName": "application",
+  "tags": {
+    "application_name": "Blender"
+  },
+  "fields": {
+    "v": "Blender"
+  }
+}
